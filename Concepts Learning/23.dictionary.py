@@ -38,6 +38,54 @@ IMPORTANT PROPERTIES:
 """
 
 
+marks = {
+    "English" : 88,
+    "Science" : 98,
+    "Biology" : 85,
+    "History" : 87
+}
+print(dict(sorted(marks.items(), key = lambda x : x[1])))
+print(dict(sorted(marks.items(), key = lambda x : x[0])))
+print(dict(sorted(marks.items(), key = lambda x : x[1], reverse = True)))
+print(dict(sorted(marks.items(), key = lambda x : x[0], reverse = True)))
+
+
+marks = { 
+    "akshy": [43, 12, 98, 10, 22], 
+    "priya": [76, 55, 34, 89, 61], 
+    "rahul": [20, 45, 67, 30], 
+    "sneha": [91, 73], 
+    "karan": [38, 82, 47, 95, 29],  
+}
+
+ans = dict(sorted(marks.items(), key=lambda x: sum(x[1]))) 
+print(ans)
+print("\n")
+
+
+
+
+students = {
+    "anirudh": {"math": 87, "science": 92, "english": 74},
+    "priya": {"math": 65, "science": 78, "english": 90},
+    "rahul": {"math": 55, "science": 60, "english": 48},
+    "sneha": {"math": 95, "science": 88, "english": 82},
+    "karan": {"math": 70, "science": 45, "english": 63}
+}
+
+
+print(dict(sorted(students.items(), key = lambda x:x[1]["math"])))
+print(dict(sorted(students.items(), key = lambda x:x[1]["math"], reverse=True)))
+
+print(dict(sorted(students.items(), key = lambda x:x[1]["math"]+x[1]["science"]+x[1]["english"])))
+# Another way
+print(dict(sorted(students.items(), key = lambda x: sum(x[1].values()))))
+
+print("\n")
+print(marks.values())
+print(marks.keys())
+print(marks.items())
+
 # ============================================================
 # 1. CREATING A DICTIONARY
 # ============================================================
