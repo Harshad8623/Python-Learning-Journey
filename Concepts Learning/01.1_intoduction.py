@@ -47,6 +47,9 @@ Python was created by:
 
 He is a Dutch programmer.
 
+A Dutch programmer is simply a computer programmer (software developer) from the Netherlands. 
+The adjective "Dutch" refers to someone or something from the Netherlands.
+
 Python was created as a successor to the ABC programming
 language.
 
@@ -291,6 +294,21 @@ Important Python features:
     - Large third-party ecosystem
     - Readable syntax
     - Automatic memory management
+"""
+
+"""
+What is a programming paradigm?
+A programming paradigm is basically a particular approach to structuring and solving problems using code.
+
+For example, Python supports several paradigms:
+
+Paradigm	                      Main idea	                             Python example
+Procedural	            Step-by-step instructions	                     if, for, functions
+Object-Oriented (OOP)	Organize code using classes/objects	             class Student:
+Functional	            Treat functions as first-class objects	         map(), filter(), lambda
+Imperative	            Tell the computer exactly how to do something	 Loops, assignments
+Declarative	            Describe what you want	                         List comprehensions, SQL-like approaches
+
 """
 
 
