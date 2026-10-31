@@ -12,6 +12,89 @@
 Python is a high-level, general-purpose, dynamically typed,
 interpreted programming language.
 
+
+1. What is High-level programming language
+Meaning: A high-level programming language is a language that is easy for humans to read, write 
+and understand because its syntax is closer to human language than machine language.
+
+2. Why is Python called a high-level language?
+"Python is called a high-level language because its syntax is simple and readable. 
+We don't need to manage low-level details like memory allocation manually in normal Python programming. 
+It allows developers to focus more on solving problems rather than hardware-level operations."
+
+3. What is General-purpose programming language
+Meaning: A general-purpose programming language is a language that can be used to develop different 
+types of applications rather than being limited to one specific task.
+Example:
+
+We can use Python for:
+Web development Example: Django, Flask, FastAPI.
+AI and Machine Learning Example: TensorFlow, PyTorch.
+Data Science Example: NumPy, Pandas.
+Automation Example: Automating repetitive tasks using Python scripts.
+
+4. What is Dynamically typed programming language
+Meaning: In a dynamically typed language, we don't need to explicitly declare the data type of a variable. 
+Python determines the type of the object at runtime.
+
+a = 10
+print(type(a))
+a = "Harshad"
+print(type(a))
+
+Initially, a refers to an integer object (10).
+Later, a refers to a string object ("Harshad").
+Python determines the type at runtime.
+We don't need to write int a = 10 or string a = "Harshad".
+
+5. What is dynamic typing?
+"Dynamic typing means we don't need to explicitly declare the data type of a variable. 
+Python determines the type at runtime, and the same variable name can refer to objects of different 
+data types during program execution."
+
+x = 100
+x = 10.5
+x = "Python"
+x = True
+
+
+6. Interpreted programming language
+Meaning: An interpreted language uses a runtime system to execute the program rather than requiring 
+the programmer to manually compile the source code into a standalone machine-code executable beforehand.
+
+Example:
+Suppose you create a Python file: main.py
+a = 10
+b = 20
+
+print(a + b)
+
+python main.py
+Python handles the execution process.
+
+How Python executes code internally:
+Python Source Code
+
+main.py
+
+Python Compiler
+
+Compiles source code into bytecode
+
+Python Bytecode
+
+Intermediate instructions
+
+Python Virtual Machine (PVM)
+
+Executes bytecode
+
+Program Output
+
+7. What is Programming language
+Meaning: A programming language is a language that allows developers to give instructions to a computer 
+to perform specific tasks.
+
 Python was designed with a strong focus on:
 
     - Readability
@@ -50,8 +133,7 @@ He is a Dutch programmer.
 A Dutch programmer is simply a computer programmer (software developer) from the Netherlands. 
 The adjective "Dutch" refers to someone or something from the Netherlands.
 
-Python was created as a successor to the ABC programming
-language.
+Python was created as a successor to the ABC programming language.
 
 Guido van Rossum started working on Python in the late
 1980s and released the first public version in 1991.
@@ -67,12 +149,12 @@ If you recently typed import this into a Python terminal,
 you probably saw a famous list of design rules called the Zen of Python. 
 One of the lines in that famous poem says: "There should be one-- and preferably only one --obvious way to do it. 
 Although that way may not be obvious at first unless you're Dutch.
-"Who is the Dutch Programmer? Name: Guido van RossumWhat 
-he did: Invented Python as a fun holiday project in December 1989.
-His Role: He led Python's development for decades as the "Benevolent Dictator for Life" (BDFL) before stepping back. 
+"Who is the Dutch Programmer? Name: Guido van Rossum 
+What he did : Invented Python as a fun holiday project in December 1989.
+His Role : He led Python's development for decades as the "Benevolent Dictator for Life" (BDFL) before stepping back. 
 He has worked for major tech giants like Google, Dropbox, and Microsoft.
 Why does the code mention "unless you're Dutch"? Inside Joke: The line in the Zen of Python is a playful joke by the author of the poem (Tim Peters) honoring Guido's Dutch heritage.
-The Meaning: It pokes fun at the idea that Python's "one obvious way" to do things might sometimes only make sense in the clever mind of its creator from the Netherlands.
+The Meaning : It pokes fun at the idea that Python's "one obvious way" to do things might sometimes only make sense in the clever mind of its creator from the Netherlands.
 """
 # ============================================================
 # 3. WHY WAS PYTHON CREATED?
@@ -220,7 +302,7 @@ Python 2:
 
     - Legacy
     - Officially discontinued
-    - End of Life: January 1, 2020
+    - End of Life : January 1, 2020
 
 Python 3:
 
@@ -234,6 +316,42 @@ INTERVIEW ANSWER:
 "Python 2 is a legacy version that reached end of life
 in 2020, while Python 3 is the modern and actively
 maintained version used for current development."
+"""
+
+"""
+Legacy version means an old version of software that is no longer actively supported or recommended for new projects.
+
+In your example:
+
+Python 2 → Legacy version
+Python 3 → Current/modern version
+Simple example 🧠
+
+Imagine a college uses an old computer system from 2015. It may still work, but:
+
+It doesn't receive new updates.
+Security problems may not be fixed.
+New software may not support it.
+Developers generally don't build new projects for it.
+
+That system is called legacy.
+
+For Python
+
+Python 2 officially reached End of Life (EOL) on January 1, 2020.
+
+This means Python 2:
+
+❌ No new features
+❌ No official bug fixes
+❌ No security updates
+❌ Not recommended for new projects
+
+Python 3 is the version you should learn and use today.
+
+In one line:
+
+Legacy = an old technology that may still exist/work, but is no longer actively supported and is generally replaced by a newer version.
 """
 
 
@@ -329,6 +447,16 @@ Python code is generally much easier to read than
 machine-level instructions.
 """
 
+"""
+What is High Level language?
+A high-level programming language is a programming language designed to be easy for humans to understand and use, 
+while hiding the low-level hardware details of the computer.
+
+
+what is Low level language?
+A low-level language is a programming language that is closely related to the hardware and provides 
+direct control over computer resources such as CPU and memory.
+"""
 
 # ============================================================
 # 14. PYTHON IS GENERAL-PURPOSE
@@ -339,7 +467,6 @@ Python is general-purpose because it can be used for many
 different types of applications.
 
 Examples:
-
     Web Development
     AI
     Machine Learning
@@ -388,6 +515,40 @@ That is an oversimplification.
 CPython does perform a compilation step to bytecode.
 """
 
+"""
+If an interviewer asks “Is Python interpreted or compiled?”, the best answer is:
+
+“Python is generally considered an interpreted language, but technically Python code is first compiled into bytecode, 
+and that bytecode is then executed by the Python interpreter.”
+
+If they ask you to explain further
+
+You can say:
+
+Python code → Bytecode → Python Virtual Machine (PVM) → Execution
+
+For example:
+print("Hello")
+When you run it:
+
+Python source code (.py) is processed.
+It is compiled into bytecode (.pyc conceptually).
+The Python interpreter/PVM executes that bytecode.
+You see the output.
+So is Python both?
+
+Technically: yes, it has both compilation and interpretation steps.
+
+But in interviews, avoid simply saying:
+
+❌ “Python is both compiled and interpreted.”
+
+A better, more precise answer is:
+
+✅ “Python is commonly called an interpreted language. 
+Internally, CPython compiles the source code into bytecode, 
+which is then executed by the Python Virtual Machine.”
+"""
 
 # ============================================================
 # 16. WHAT IS CPYTHON?
@@ -435,6 +596,15 @@ The same variable name can refer to different types
 of objects at different times.
 """
 
+"""
+    x = 10
+
+    x = "Python"
+
+So where does 10 go?
+If nothing else is referring to the object 10, Python's memory-management system can eventually remove/reclaim that object.
+This is called garbage collection / reference-count-based memory management in CPython.
+"""
 
 # ============================================================
 # 18. PYTHON IS CASE-SENSITIVE
@@ -478,6 +648,11 @@ developed through a community-driven process.
 Python is managed by the Python Software Foundation
 (PSF), a non-profit organization that supports the
 Python community.
+
+Q. What is Open Source?
+Open-source software is software whose source code is publicly available, 
+so people can inspect it, use it, modify it, 
+and often distribute modified versions, depending on its license.
 """
 
 
@@ -515,6 +690,19 @@ Therefore Python is often described as a
 multi-paradigm programming language.
 """
 
+"""
+🎯 Interview answer
+
+If an interviewer asks:
+
+"What do you mean by Python supports multiple programming paradigms?"
+
+Say:
+
+"It means Python allows programmers to use different programming approaches, 
+such as procedural, object-oriented, and functional programming, 
+depending on the problem and requirement."
+"""
 
 # ============================================================
 # 22. PYTHON APPLICATIONS
@@ -685,10 +873,15 @@ PyPI using package management tools such as pip.
 
 
 # ============================================================
-# 27. PIP
+# 27. PIP 
 # ============================================================
 
 """
+pip does not officially stand for a specific phrase (No full form).
+The Python Packaging User Guide describes pip simply as the package installer for Python. 
+The name is commonly explained historically as a recursive acronym:
+
+“pip installs packages”
 pip is the standard package installer commonly used
 with Python.
 
@@ -779,6 +972,9 @@ conventions for writing readable and consistent Python code."
 """
 PEP 20 contains the Zen of Python.
 
+PEP 20 is the Zen of Python. It contains 19 principles that describe the philosophy of Python programming, 
+emphasizing simplicity, readability, clarity, and practicality.
+
 You can display it in Python using:
 
     import this
@@ -789,6 +985,26 @@ It contains guiding principles emphasizing:
     - Simplicity
     - Explicitness
     - Clarity
+
+PEP 8 = How to write Python code
+PEP 20 = How to think about writing Python code
+
+PEP 8 vs PEP 20
+	                PEP 8	                                PEP 20
+Full name	        Style Guide for Python Code	            The Zen of Python
+Main purpose	    Coding style and formatting	            Python's philosophy/principles
+Focus	            How code should look	                How code should be designed/thought about
+Contains	        Rules/recommendations	                19 principles
+Example	            Naming, indentation, spaces	            Simplicity, readability, clarity
+Used for	        Writing consistent, readable code	    Guiding programming decisions
+
+🎯 Interview answer
+
+If asked "What is the difference between PEP 8 and PEP 20?", say:
+
+"PEP 8 is Python's style guide that provides recommendations for writing clean and consistent code, 
+such as indentation, naming conventions, and formatting. PEP 20, known as the Zen of Python, 
+describes the philosophy and principles behind Python, emphasizing simplicity, readability, and clarity."
 """
 
 

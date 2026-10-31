@@ -37,7 +37,7 @@ print(age)
 
 name = "Harshad"          # str
 age = 21                  # int
-percentage = 85.5        # float
+percentage = 85.5         # float
 is_student = True         # bool
 
 print(name)
@@ -178,6 +178,8 @@ age2 = 21
 student_name = "Rahul"
 
 _marks = 90
+
+_ = 897
 
 
 # Invalid examples:
@@ -475,6 +477,14 @@ print(id(a))
 
 """
 id() returns the identity of an object.
+
+🎯 Interview answer
+
+If asked "What does id() return?", say:
+
+"id() returns the unique identity of an object during its lifetime. 
+In CPython, this identity is typically the object's memory address, 
+but Python does not guarantee that id() is a memory address."
 
 You don't need to memorize the actual number because
 it can vary between executions.

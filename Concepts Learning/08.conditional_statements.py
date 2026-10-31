@@ -1,6 +1,5 @@
 # ============================================================
 #                  PYTHON CONDITIONAL STATEMENTS
-#       Complete Notes + Examples + Interview Preparation
 # ============================================================
 
 """

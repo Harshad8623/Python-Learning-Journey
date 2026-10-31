@@ -9,4 +9,3 @@ Features
 •	Save to File or SQLite 
 
 """
-

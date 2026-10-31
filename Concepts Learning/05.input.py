@@ -168,6 +168,13 @@ split() separates it into:
 ["10", "20", "30"]
 """
 
+a, *b, c = (10, 20,30,40,50) # tuple
+print(a, b, c)  # 10, [20, 30, 40], 50
+
+a, *b, c = [10, 20,30,40,50] # list
+print(a, b, c)  # 10, [20, 30, 40], 50
+
+
 values = input("Enter numbers: ").split()
 
 print(values)

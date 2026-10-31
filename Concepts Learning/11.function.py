@@ -577,6 +577,25 @@ addition(10, 20, 30)
 addition(10, 20, 30, 40, 50)
 
 
+"""
+Function *args → tuple
+Unpacking *variable → list
+
+a, *b = 10, 20, 30, 40
+
+print(a)  # 10
+print(b)  # [20, 30, 40]
+
+
+def addition(*args):
+    print(args)
+    print(type(args))
+
+addition(10, 20)
+addition(10, 20, 30)
+addition(10, 20, 30, 40, 50)
+
+"""
 # ============================================================
 # 26. PRACTICAL *args EXAMPLE
 # ============================================================

@@ -133,7 +133,7 @@ def triangle(a, b, c):
     area = (s * (s-a) * (s-b) * (s-c)) ** 0.5
     return perimeter, area
 
-
+ 
 # 10. Quick interview test
 if __name__ == "__main__":
     print(swap_temp(10, 20))

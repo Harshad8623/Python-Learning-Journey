@@ -1,6 +1,5 @@
 # ============================================================
 #                    PRINT STATEMENT IN PYTHON
-#       Complete Notes + Examples + Interview Preparation
 # ============================================================
 
 """
@@ -850,7 +849,7 @@ Q2. What is the default value of sep?
 
 Q3. What is the default value of end?
 
-"\\n"
+\n
 
 
 Q4. What does print() return?

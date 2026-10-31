@@ -299,7 +299,6 @@ for i in range(10, 0, -1):
 # ============================================================
 
 for i in range(2, 11, 2):
-
     print(i)
 
 
@@ -1295,6 +1294,23 @@ for i in range(k, len(numbers)):
     window_sum -= numbers[i - k]
 
     print(window_sum)
+
+
+
+# ============================================================
+# for loop (infinite times)
+# ============================================================
+
+import itertools
+
+# Generates numbers 0, 1, 2, 3... infinitely
+for i in itertools.count(start=0, step=1):
+    print(i)
+    
+    # Example exit condition to prevent crashing your system
+    if i >= 1000:
+        break
+
 
 
 # ============================================================
