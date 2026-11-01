@@ -390,41 +390,4 @@ A: No. It provides a controlled interface; it does not create
    strict security.
 """
 
-
-# ============================================================
-# 13. PRACTICE TASKS
-# ============================================================
-
-"""
-TASK 1:
-Create an Employee class.
-- name should be public.
-- salary should be stored as __salary.
-- Add a @property getter for salary.
-- Initially, do not create a setter.
-
-TASK 2:
-Add @salary.setter.
-- Accept only salary values greater than zero.
-- Reject zero and negative values.
-
-TASK 3:
-Create a Bank class.
-- Store account holder name.
-- Store balance as __balance.
-- Add deposit(), withdraw(), and get_balance().
-- Reject zero/negative deposits.
-- Reject withdrawals greater than the available balance.
-
-TASK 4:
-Explain in your own words:
-- What is encapsulation?
-- Difference between _value and __value?
-- What is name mangling?
-- Difference between traditional getters/setters and @property?
-
-Try solving these tasks yourself.
-"""
-
-
 # ============================================================
