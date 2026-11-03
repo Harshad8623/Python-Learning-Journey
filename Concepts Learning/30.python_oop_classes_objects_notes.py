@@ -7,6 +7,15 @@ PYTHON OOP NOTES — CLASSES, OBJECTS, __init__, AND VARIABLES
 
 OOP stands for Object-Oriented Programming.
 
+What is OOPs : OOPs is a programming paradigm that organizes code into classes and objects. 
+It helps us achieve code reusability, security, modularity, and maintainability
+
+Four Pillars of OOPs
+1. Encapsulation : Wrapping data and methods together in a class.
+2. Inheritance : Acquiring properties and methods from another class.
+3. Polymorphism : One method or interface behaving in different ways.
+4. Abstraction : Hiding implementation details and showing only essential features.
+
 OOP is a way of thinking about and organizing code as a collection of
 cooperating objects.
 
@@ -568,6 +577,50 @@ To access the class variable, you can use:
 But accessing through an object does not mean assignment through that
 object changes the class variable.
 
+
+
+=============================================================
+
+Types of Constructors in Python
+There are mainly 2 types of constructors:
+    1. Default Constructor
+    2. Parameterized Constructor
+----------------------------------------
+1. Default Constructor : A default constructor is a constructor that does not take any arguments other than self.
+----------------------------------------
+class Student:
+
+    def __init__(self):
+        print("Constructor called")
+
+# Creating an object
+s1 = Student()
+----------------------------------------
+2. Parameterized Constructor : A parameterized constructor accepts arguments to initialize the object's attributes with specific values.
+----------------------------------------
+class Student:
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def display(self):
+        print(self.name, self.age)
+
+
+# Creating objects
+s1 = Student("Harshad", 21)
+s2 = Student("Rahul", 22)
+
+s1.display()
+s2.display()
+----------------------------------------
+
+
+=============================================================
+
+
+
 =============================================================
 16. QUICK REVISION
 =============================================================
@@ -670,4 +723,49 @@ A. Use self.method_name().
 
 END OF NOTES
 ============
+"""
+
+
+"""
+class Student:
+        def __init__(
+            self,
+            name: str,
+            age: int,
+            marks: list[int]
+        ) -> None:
+            self.name = name
+            self.age = age
+            self.marks = marks
+
+        def total_marks(self) -> int:
+            return sum(self.marks)
+
+        def average_marks(self) -> float:
+            return self.total_marks() / len(self.marks)
+
+        def demo():
+            print("This is demo")
+
+        def display_grade(self) -> None:
+            average = self.average_marks()
+
+
+            if average >= 90:
+                print("Grade A")
+            elif average >= 50:
+                print("Grade B")
+            else:
+                print("Grade C")
+
+
+student1 = Student("Aniruddh", 20, [78, 54, 19, 63])
+
+print("Total:", student1.total_marks())
+print("Average:", student1.average_marks())
+student1.display_grade()
+Student.deom()
+# student1.demo() this will give error because
+student1.demo() tries to pass student1 as the first argument, but your method accepts zero arguments.
+Student.demo() calls the function directly without automatically passing an object.
 """

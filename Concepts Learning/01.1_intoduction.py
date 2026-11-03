@@ -34,7 +34,7 @@ Data Science Example: NumPy, Pandas.
 Automation Example: Automating repetitive tasks using Python scripts.
 
 4. What is Dynamically typed programming language
-Meaning: In a dynamically typed language, we don't need to explicitly declare the data type of a variable. 
+Meaning: In a dynamically typed langu age, we don't need to explicitly declare the data type of a variable. 
 Python determines the type of the object at runtime.
 
 a = 10
