@@ -271,10 +271,13 @@ Example:
 # 10. COMPLEX NUMBER (complex)
 # ============================================================
 
-comp = 2 + 6j
+comp1 = 2 + 6j
+comp2 = complex(2,6)
 
-print(comp)
-print(type(comp))
+print(comp1)
+print(type(comp1))
+print(comp2)
+print(type(comp2))
 
 # Output:
 # (2+6j)
@@ -296,8 +299,8 @@ j -> imaginary unit
 """
 
 
-print(comp.real)
-print(comp.imag)
+print(comp1.real)
+print(comp1.imag)
 
 
 # ============================================================
@@ -513,9 +516,12 @@ print(subjects[0])
 print(subjects[-1])
 
 
+'''
 # ============================================================
-# 17. SLICING
+17. SLICING : Slicing in Python is a way to extract a specific portion of a sequence, such as a string, 
+list, or tuple. It allows us to get multiple elements without accessing them one by one.
 # ============================================================
+'''
 
 name = "Harshad"
 
@@ -610,6 +616,12 @@ print(isinstance(x, str))
 # 22. type() VS isinstance()
 # ============================================================
 
+"""
+type() is a built-in Python function that returns the exact type (class) of an object.
+
+isinstance() is a built-in Python function that checks whether an object belongs to a particular class or its subclass.
+It returns either True or False.
+"""
 x = True
 
 print(type(x))
